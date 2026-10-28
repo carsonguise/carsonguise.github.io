@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Selected case studies in marketing strategy, research, public relations, international work, music, and fashion.">
+  <meta name="theme-color" content="#f9f6e6">
+  <meta name="portfolio-base-path" content="">
+  <title>Projects — Carson Guise</title>
+  <link rel="icon" href="/assets/cg-full.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/FiraSans-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+  <script src="/projects.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body class="page-projects" data-page="projects">
+  <a class="skip-link" href="#top">Skip to content</a>
+  <header class="site-header">
+    <a class="identity" href="/" aria-label="Carson Guise, home"><img src="/assets/cg-full.svg" alt="Carson Guise CG monogram" width="60" height="39"></a>
+    <nav aria-label="Main navigation">
+      <a href="/experiences/">Experiences</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/about/">About Me</a>
+      <a href="/contact/">Contact Me</a>
+    </nav>
+  </header>
+  <main id="top" tabindex="-1">
+    <section class="work-section page-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">What I’ve been working on</p><h1 id="work-title" class="page-title">Projects with <em>a purpose.</em></h1></div><p>Real questions. Thoughtful approaches. <br>Take a look at the work behind the ideas.</p></div>
+      <div class="work-controls">
+        <div class="filters" role="group" aria-label="Filter projects by area">
+          <button class="filter active" data-filter="all" aria-pressed="true">All work <span>06</span></button>
+          <button class="filter" data-filter="strategy" aria-pressed="false">Marketing strategy</button>
+          <button class="filter" data-filter="pr" aria-pressed="false">PR & communications</button>
+          <button class="filter" data-filter="international" aria-pressed="false">International</button>
+          <button class="filter" data-filter="music-fashion" aria-pressed="false">Music & fashion</button>
+        </div>
+        <label class="search-box"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input id="project-search" type="search" placeholder="Find a project or skill" aria-label="Search projects and skills"></label>
+      </div>
+      <p id="result-count" class="result-count" role="status" aria-live="polite">Showing all 6 projects</p>
+      <div id="project-grid" class="project-grid"></div>
+      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">↺</span><h3>A different direction?</h3><p>No matches yet. Try another skill or explore all selected work.</p><button id="reset-filters" class="button primary">Show all projects ↗</button></div>
+      <noscript><p>Please enable JavaScript to filter the portfolio and open the case studies.</p></noscript>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="/" aria-label="Carson Guise, home"><img src="/assets/cg-full.svg" width="45" height="29" alt=""><span>Carson Guise<br><small>Marketing student @ RIT</small></span></a><div class="footer-links" role="group" aria-label="Contact Carson"><a href="mailto:guisecarson@gmail.com">guisecarson@gmail.com</a><a href="https://www.linkedin.com/in/carson-guise/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div><a href="#top">Back to top ↑</a></footer>
+  <dialog id="case-dialog" aria-labelledby="case-title"><div class="dialog-top"><a href="/projects/" id="dialog-home">CARSON GUISE / SELECTED WORK</a><button id="close-case" aria-label="Close case study">Close <span>×</span></button></div><div id="case-content"></div><div class="case-navigation"><button id="previous-case">← Previous project</button><span id="case-position"></span><button id="next-case">Next project →</button></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
