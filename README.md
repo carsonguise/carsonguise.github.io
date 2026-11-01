@@ -32,7 +32,7 @@ For an already configured static host, serve this folder as the site's root; `in
 
 - `index.html`: Home
 - `experiences.html`: Paylocity, Kevin Guest House, Florania
-- `projects.html`: Filterable project gallery and case-study dialog
+- `projects.html`: Filterable project gallery and project dialog
 - `about.html`: Biography, headshot, and Spotify playlists
 - `contact.html`: Simple “Let’s Connect!” page with email and LinkedIn links
 - The `portfolio-styles` style block inside each HTML page: Full design and responsive layout; apply design edits to all five pages
@@ -45,6 +45,6 @@ For an already configured static host, serve this folder as the site's root; `in
 
 The website displays original project pages inline, with no project-file download controls or raw PDFs in this export. Project cards are text-based, and the rectangular home headshot links to About Me.
 
-Projects with files open in a screen-filling reader. Use the arrows on the document, swipe, or press the left/right keys while the page viewer is focused. Switch to **Case study** to read the written project summary, then **Project file** to return to the document. Each page fits the available screen without a manual enlargement step.
+Projects open in one vertical scrolling column, with the overview followed by the document at every screen size. The overview is organized as Issue, My thought process, My deliverable, and Key findings & data. Use the equal-sized arrows on the document, swipe, or press the left/right keys while the viewer is focused. Pages fit the available document frame without cropping; there is no separate file/overview tab.
 
 The header and footer are present in each HTML file. Apply shared edits to all five pages. Font files are self-hosted; Fira Sans's license is included in `OFL.txt`. No license is granted here for Carson's original photos, logo, or portfolio materials.

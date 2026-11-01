@@ -2,9 +2,9 @@
 
 ## Sources and scope
 
-The October 29, 2026 user-provided experience, education, and project descriptions (also supplied in `Pasted text(2).txt`) support this expansion. They document ten roles across eight work-history entries, including two RIT teams, two education entries, and 24 projects. Three of those projects were already present; 21 were added. The existing AEOP, Give716, and Slayyyter × Chanel case studies are retained, for 27 cases total.
+The October 29, 2026 user-provided experience, education, and project descriptions (also supplied in `Pasted text(2).txt`) support this expansion. They document ten roles across eight work-history entries, including two RIT teams, two education entries, and 24 projects. Three of those projects were already present; 21 were added. The existing AEOP, Give716, and Slayyyter × Chanel projects are retained, for 27 cases total.
 
-Completed case studies have five relevant skills, project context, contribution, three strategic approach steps, a synthesized takeaway, and supported deliverables/outcomes. The summaries were initially based on the supplied project descriptions. Original files supplied October 31, 2026 are now viewable inline where available; numerical findings from those files have not been added as new performance claims. Slayyyter × Chanel is an ongoing project with a brief status message instead of completed-case sections. Proposed recommendations and concepts are not represented as implemented client work or measured commercial improvements. The brand analyses describe the historical periods researched, rather than asserting current brand leadership, policy, or performance.
+Completed projects have five relevant skills, project context, contribution, three strategic approach steps, a synthesized takeaway, and supported deliverables/outcomes. The summaries were initially based on the supplied project descriptions. Original files supplied October 31, 2026 are now viewable inline where available; numerical findings from those files have not been added as new performance claims. Slayyyter × Chanel is an ongoing project with a brief status message instead of completed-case sections. Proposed recommendations and concepts are not represented as implemented client work or measured commercial improvements. The brand analyses describe the historical periods researched, rather than asserting current brand leadership, policy, or performance.
 
 ## Experience and education
 
@@ -70,7 +70,7 @@ The Stukent link is attached to Digital Marketing Simternship. Its official embe
 
 The original project documents are retained as source files outside the published directory. Their page previews share the portfolio’s private hosting. The Stukent certificate is now shown inline from the verified certificate PDF; the public SoundCloud article retains its external link. No third-party viewers are embedded. The home headshot reuses the supplied portrait, has a rectangular crop, and links to About Me. The logo, introduction, and portrait occupy separate responsive areas.
 
-Three additional original presentations supplied October 31, 2026 are attached to Audemars Piguet, the RIT Business Analytics Competition (AI Model Analytics), and CIEE Capsule. They are copied unchanged with their original team credits. The portfolio now links 23 hosted project files plus the two existing external resources. This update adds documents without changing case-study findings or metrics.
+Three additional original presentations supplied October 31, 2026 are attached to Audemars Piguet, the RIT Business Analytics Competition (AI Model Analytics), and CIEE Capsule. They are copied unchanged with their original team credits. The portfolio now links 23 hosted project files plus the two existing external resources. This update adds documents without changing project findings or metrics.
 
 ## Inline reading and card redesign
 
@@ -78,8 +78,20 @@ The supplied project files are displayed as 24 inline document previews (317 pag
 
 Readers can swipe between pages, select a page, use keyboard or Previous/Next controls, switch between a project's documents, enlarge a page, and read its extracted text. The cards themselves use titles, summaries, and skill labels rather than illustrated covers. The rectangular headshot remains an About Me link.
 
-Project card index numbers and the bottom highlight/CTA rows are removed at Carson’s request. Cards retain their full-area case-study links, summaries, and skills. This changes presentation only.
+Project card index numbers and the bottom highlight/CTA rows are removed at Carson’s request. Cards retain their full-area project links, summaries, and skills. This changes presentation only.
 
 The Home portrait now matches the About Me photo’s dimensions and responsive sizing, including its 4:5 aspect ratio. Its square corners and About Me link are preserved.
 
-Project cards with document previews now open a screen-filling reader by default. Pages fit the available space without cropping, and left/right arrows on the document change pages. Written case-study content remains available through a separate view button. The document sources, page images, extracted text, and case-study claims are unchanged.
+Project overviews and document previews now share one combined view with no separate file/overview tabs. The sections are Issue, My thought process, My deliverable, Key findings & data, and relevant skills. Florania is labeled Marketing Analysis & Recommendations. Original files, team credits, and source page images are unchanged.
+
+## Supported final data added November 1, 2026
+
+- Florania: six prioritized recommendations on page 18 of the supplied marketing overview. This counts proposed actions and does not imply implementation or measured improvement.
+- Gummy Gains: the presentation, page 6, reports 35 respondents. The final report, page 7, identifies 18 Price-Conscious respondents (51.43%) and 17 Customizers (48.57%). The presentation, page 15, describes a limited convenience sample with sampling bias. These are sample findings, not population estimates or sales outcomes. The strongest attribute was price; the portfolio does not resolve the report’s inconsistent ordering of the other attributes into a new ranking.
+- Target: page 11 of the campaign presentation specifies one proposed 30-second advertising spot. This is a creative deliverable, not an aired campaign. Projected advertising returns are not presented as achieved results.
+- Eras Tour: page 4 of the supplied presentation reports average ticket prices of $119.85 for Reputation and $204.33 for the Eras Tour. These are attributed historical figures in the student project and do not establish a causal effect or describe current ticket prices.
+- Björk: the user-provided project description states five responsive website pages. This is deliverable scope.
+- AEOP and Give716 retain the previously supplied performance figures and attribution limits described above.
+- Other projects show grounded qualitative findings rather than invented numerical outcomes. The Silent Behavior finding is attributed to the supplied poster’s informal RIT student survey; no sample size is claimed.
+
+Project detail pages use one vertical scrolling column on every screen size. The overview, findings, and document follow one another in the same scroll area; no separate overview scroll pane remains. This changes layout only.

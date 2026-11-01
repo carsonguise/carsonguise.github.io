@@ -9,7 +9,7 @@
   <title>Experiences — Carson Guise</title>
   <link rel="icon" href="cg-full.svg" type="image/svg+xml">
   <link rel="preload" href="FiraSans-Regular.woff" as="font" type="font/woff" crossorigin>
-  <meta name="portfolio-export-version" content="17b2c88fa107">
+  <meta name="portfolio-export-version" content="2128fd9bcb1e">
   <style id="portfolio-styles">
 @font-face{font-family:'Fira Sans';src:url('FiraSans-Regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:'Fira Sans';src:url('FiraSans-Medium.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}
@@ -501,7 +501,7 @@ footer{padding-top:22px;padding-bottom:22px}
 .home-headshot{display:block;width:128px;flex:0 0 128px;border:4px solid var(--cream);border-radius:65px 65px 28px 28px;overflow:hidden;box-shadow:5px 5px 0 #a9c59d66;transition:border-color .2s}
 .home-headshot:hover{border-color:var(--green)}
 .home-headshot>img{display:block;width:100%;height:160px;object-fit:cover;object-position:50% 22%}
-/* Original materials are close to the top of each completed case study. */
+/* Original materials are close to the top of each completed project. */
 .case-resources{border:1px solid #afc29f;background:#e1eacd80;border-radius:17px;padding:22px;margin:0 0 28px}
 .case-resources h3{font-size:23px;line-height:1.2;letter-spacing:-.025em;font-weight:400;margin:0 0 8px}
 .case-resources>p{font-size:11px;color:var(--muted);line-height:1.6;margin:0 0 15px}
@@ -539,7 +539,7 @@ footer{padding-top:22px;padding-bottom:22px}
 .card-skills>span{font-size:9px;line-height:1.4;padding:6px 9px;border:1px solid #c0ceaf;border-radius:15px;color:var(--forest);background:#e1eacd60}
 .plain-project-card .card-bottom,.page-projects .plain-project-card .card-bottom{font-size:9px;line-height:1.7;gap:16px;flex-direction:row;margin-top:auto;padding-top:13px;padding-bottom:0}
 .plain-project-card .card-bottom>span:first-child{max-width:65%}
-/* Original work stays inside the case study, with touch and keyboard navigation. */
+/* Original work stays inside the project, with touch and keyboard navigation. */
 #case-dialog{width:min(1100px,calc(100% - 40px))}
 .case-header{padding:27px 38px 24px}
 .case-header h2{font-size:45px;line-height:1.08}
@@ -608,41 +608,65 @@ footer{padding-top:22px;padding-bottom:22px}
 @media(max-width:800px){.home-intro{grid-template-columns:1.35fr 1fr;column-gap:7%}}
 @media(max-width:600px){.home-intro{grid-template-columns:minmax(0,1fr);grid-template-areas:"brand" "intro" "portrait";gap:24px}.home-brand-area{justify-self:center}.home-intro-copy{max-width:390px;text-align:center;margin:0 auto}.home-headshot{width:78%;max-width:280px;margin:0 auto 15px}}
 
-/* Project files open fitted to the viewport, with paging on the document. */
+/* One project view combines the overview and its fitted deliverable. */
 #case-dialog.has-project-document[open]{display:flex;flex-direction:column;inset:0;width:100vw;max-width:none;height:100dvh;max-height:100dvh;margin:0;border:0;border-radius:0;overflow:hidden}
 .has-project-document>.dialog-top,.has-project-document>.case-navigation{flex-shrink:0}
-.has-project-document>#case-content{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain}
-.has-project-document .case-titlebar{display:flex;align-items:flex-start;justify-content:space-between;gap:25px}
-.case-view-switch{display:flex;align-items:center;flex:none;gap:5px;padding:4px;border:1px solid #b5c4a4;border-radius:24px;background:var(--cream)}
-.case-view-switch button{font:inherit;font-size:11px;line-height:1.3;min-height:34px;padding:8px 14px;border:0;border-radius:19px;background:transparent;color:var(--forest);white-space:nowrap}
-.case-view-switch button[aria-pressed="true"]{background:var(--forest);color:var(--cream)}
-.case-view-switch button:hover:not([aria-pressed="true"]){background:var(--middle)}
-.document-view>#case-content{display:flex;flex-direction:column;overflow:hidden}
-.document-view .case-header{flex-shrink:0;padding:10px 24px;border-bottom:1px solid var(--line)}
-.document-view .case-titlebar{align-items:center;gap:20px}
-.document-view .case-header h2{font-size:21px;line-height:1.25;letter-spacing:-.025em;margin:0}
-.document-view .case-header>:is(.eyebrow,.case-subtitle,.case-origin,.case-tags){display:none}
-.document-view>.case-navigation{display:none}
-.document-view .project-viewer{display:flex;flex-direction:column;flex:1;min-height:0;margin:0;padding:12px 24px 8px;border:0;border-radius:0;background:transparent}
-.document-view .viewer-controls{display:grid;grid-template-columns:minmax(0,1fr) auto auto;grid-template-areas:"document picker position";flex-shrink:0;gap:14px;padding:0 0 10px}
-.viewer-file-picker{grid-area:document;display:flex;align-items:center;gap:10px;min-width:0;font-size:11px;color:var(--muted)}
-.viewer-file-picker select{font:inherit;font-size:12px;min-width:0;min-height:38px;max-width:100%;flex:1;border:1px solid #b4c4a3;border-radius:10px;background:var(--cream);color:var(--ink);padding:8px 12px;text-overflow:ellipsis}
+.has-project-document>#case-content{display:block;flex:1;min-height:0;overflow:auto;overscroll-behavior:contain}
+.case-header{padding:23px 30px 20px}
+.case-header h2{font-size:clamp(25px,2.6vw,36px);line-height:1.15;margin:0 0 8px;letter-spacing:-.035em}
+.case-header>.eyebrow{font-size:9px;margin-bottom:8px}
+.case-header .case-subtitle{font-size:16px;line-height:1.4;margin:0 0 8px}
+.case-header .case-origin{font-size:10px;line-height:1.5;margin:0 0 9px}
+.case-tags{font-size:9px}
+.case-tags>span{padding:5px 10px}
+.case-tags button{font-size:10px;padding:6px 0}
+.has-project-document .case-header{width:100%;max-width:1100px;margin:0 auto;padding:22px 25px 18px;border-bottom:1px solid var(--line)}
+.has-project-document .project-layout{display:block;width:100%;max-width:1100px;margin:0 auto;overflow:visible}
+.project-overview{padding:4px 30px 28px;min-width:0}
+.has-project-document .project-overview{padding:24px 25px 28px;overflow:visible;border-right:0;border-bottom:1px solid var(--line)}
+.project-section{padding-bottom:24px;margin-bottom:23px;border-bottom:1px solid var(--line)}
+.project-section:last-of-type{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.project-section h3{font-size:23px;font-weight:400;letter-spacing:-.025em;line-height:1.25;margin:0 0 13px}
+.project-section p,.project-section li{font-size:12px;line-height:1.85;color:#4f604a}
+.project-section p{margin:0 0 12px}
+.project-section p:last-child{margin-bottom:0}
+.project-section ol,.project-section ul{padding-left:19px;margin:12px 0 0}
+.project-section li+li{margin-top:11px}
+.project-section .deliverables{margin-top:14px;gap:7px}
+.project-section .deliverables span{font-size:10px;padding:7px 10px}
+.project-section .skills{gap:7px}
+.project-section .skills span{font-size:10px;padding:7px 11px}
+.project-data{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-bottom:19px}
+.project-data>div{display:flex;flex-direction:column;gap:7px;padding:16px 14px;border:1px solid #bacbab;border-radius:13px;background:#e1eacd70;min-width:0}
+.project-data strong{font-size:27px;line-height:1.15;font-weight:400;letter-spacing:-.035em;color:var(--forest)}
+.project-data span{font-size:11px;line-height:1.5}
+.project-data small{font-size:9px;line-height:1.7;color:var(--muted)}
+.project-data>div:last-child:nth-child(odd){grid-column:1/-1}
+.project-section .published-work{margin:17px 0 0;padding:15px;border:1px solid var(--line);border-radius:12px}
+.published-work h4{font-size:15px;font-weight:400;margin:0 0 9px}
+.project-viewer{display:flex;flex-direction:column;min-height:320px;height:80dvh;margin:0;padding:18px 25px 8px;border:0;border-radius:0;background:transparent}
+.project-viewer .viewer-controls{display:grid;grid-template-columns:minmax(0,1fr) auto auto;grid-template-areas:"document picker position";width:100%;flex-shrink:0;gap:10px;padding:0 0 10px}
+.viewer-file-picker{grid-area:document;display:flex;align-items:center;gap:8px;min-width:0;font-size:10px;color:var(--muted)}
+.viewer-file-picker select{font:inherit;font-size:11px;min-width:0;height:40px;max-width:100%;flex:1;border:1px solid #b4c4a3;border-radius:10px;background:var(--cream);color:var(--ink);padding:7px 9px;text-overflow:ellipsis}
 .viewer-file-picker select:disabled{opacity:1;color:var(--forest);appearance:none}
-.document-view .viewer-position{font-size:11px;min-width:62px}
-.document-view .viewer-stage,.document-view .viewer-stage.has-page{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);flex:1;min-height:0;height:auto;max-height:none;aspect-ratio:auto;padding:8px;background:#e3e8dc;border:1px solid #c3cbb8;border-radius:9px}
-.document-view .viewer-page{grid-area:1/1;width:100%;height:100%;min-width:0;min-height:0;max-width:100%;max-height:100%;object-fit:contain}
-.document-view .viewer-loading,.document-view .viewer-error{grid-area:1/1;align-self:center;justify-self:center}
-.document-view .viewer-arrow{position:absolute;z-index:2;grid-area:auto;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:46px;height:58px;padding:0;border:1px solid #8fa582;border-radius:14px;background:#f9f6e6f2;color:var(--forest);box-shadow:0 2px 10px #202b2320;cursor:pointer;touch-action:manipulation}
-.document-view .viewer-previous{left:12px}
-.document-view .viewer-next{right:12px}
-.document-view .viewer-arrow:hover:not(:disabled){background:var(--forest);color:var(--cream)}
-.document-view .viewer-arrow:disabled{opacity:.3;cursor:default;box-shadow:none}
-.document-view .viewer-arrow:focus-visible{outline:3px solid var(--forest);outline-offset:3px}
-.document-view .viewer-transcript{flex-shrink:0;margin-top:5px;padding-top:0;border:0}
-.document-view .viewer-transcript>summary{min-height:30px}
-.document-view .viewer-transcript>div{max-height:25dvh;margin-top:4px;padding:10px 14px}
-@media(max-width:650px){.has-project-document .case-titlebar{flex-direction:column;gap:12px}.document-view .dialog-top{padding:9px 14px}.document-view .case-header{padding:9px 14px}.document-view .case-titlebar{align-items:flex-start;gap:8px}.document-view .case-header h2{font-size:18px;line-height:1.25}.case-view-switch{padding:3px}.case-view-switch button{font-size:10px;min-height:31px;padding:7px 12px}.document-view .project-viewer{padding:9px 10px 5px}.document-view .viewer-controls{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"document document" "picker position";gap:7px;padding-bottom:8px}.viewer-file-picker{font-size:10px;gap:7px}.viewer-file-picker select{font-size:11px;min-height:35px;padding:7px 9px}.document-view .viewer-page-picker select{min-height:31px;padding:5px 10px}.document-view .viewer-position{justify-self:end;font-size:10px}.document-view .viewer-stage,.document-view .viewer-stage.has-page{padding:5px}.document-view .viewer-arrow{width:40px;height:50px;border-radius:11px}.document-view .viewer-previous{left:7px}.document-view .viewer-next{right:7px}.document-view .viewer-transcript>summary{font-size:10px;min-height:28px}}
-@media(max-height:520px){.document-view .dialog-top{padding-block:5px}.document-view .case-header{padding-block:6px}.document-view .case-view-switch button{min-height:28px;padding-block:5px}.document-view .project-viewer{padding-top:6px}.document-view .viewer-controls{padding-bottom:6px}.document-view .viewer-transcript>summary{min-height:25px}}
+.project-viewer .viewer-page-picker select{height:40px;min-height:40px;padding:7px 10px}
+.project-viewer .viewer-position{font-size:10px;min-width:48px}
+.project-viewer .viewer-stage,.project-viewer .viewer-stage.has-page{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);flex:1;min-height:0;height:auto;max-height:none;aspect-ratio:auto;width:100%;padding:8px;background:#e3e8dc;border:1px solid #c3cbb8;border-radius:9px}
+.project-viewer .viewer-page{grid-area:1/1;width:100%;height:100%;min-width:0;min-height:0;max-width:100%;max-height:100%;object-fit:contain}
+.project-viewer .viewer-loading,.project-viewer .viewer-error{grid-area:1/1;align-self:center;justify-self:center}
+.project-viewer .viewer-arrow{position:absolute;z-index:2;grid-area:auto;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:1px solid #8fa582;border-radius:12px;background:#f9f6e6f2;color:var(--forest);box-shadow:0 2px 10px #202b2320;cursor:pointer;touch-action:manipulation}
+.project-viewer .viewer-previous{left:10px}
+.project-viewer .viewer-next{right:10px}
+.project-viewer .viewer-arrow:hover:not(:disabled){background:var(--forest);color:var(--cream)}
+.project-viewer .viewer-arrow:disabled{opacity:.3;cursor:default;box-shadow:none}
+.project-viewer .viewer-arrow:focus-visible{outline:3px solid var(--forest);outline-offset:3px}
+.project-viewer .viewer-transcript{flex-shrink:0;margin-top:5px;padding-top:0;border:0}
+.project-viewer .viewer-transcript>summary{min-height:30px}
+.project-viewer .viewer-transcript>div{max-height:22dvh;margin-top:4px;padding:10px 14px}
+.case-navigation{padding:11px 24px}
+.case-navigation button{width:160px;min-height:40px;padding:9px 12px}
+@media(max-width:1000px){.has-project-document>#case-content{display:block;overflow:auto;overscroll-behavior:contain}.has-project-document .project-layout{display:block;overflow:visible}.has-project-document .project-overview{overflow:visible;border-right:0;border-bottom:1px solid var(--line)}.project-viewer{height:80dvh;min-height:320px;padding:18px 24px 8px}.has-project-document .case-header{padding:18px 24px 15px}}
+@media(max-width:650px){.case-header{padding:20px}.case-header h2{font-size:25px}.case-header .case-subtitle{font-size:15px}.has-project-document .case-header{padding:17px 19px 14px}.project-overview,.has-project-document .project-overview{padding:21px 20px 26px}.project-section{padding-bottom:21px;margin-bottom:21px}.project-section h3{font-size:23px}.project-data{gap:10px}.project-data strong{font-size:25px}.project-data>div{padding:15px 12px}.project-viewer{padding:12px 12px 6px}.project-viewer .viewer-controls{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"document document" "picker position";gap:7px;padding-bottom:8px}.viewer-file-picker{font-size:10px}.project-viewer .viewer-position{justify-self:end}.project-viewer .viewer-stage,.project-viewer .viewer-stage.has-page{padding:5px}.project-viewer .viewer-previous{left:7px}.project-viewer .viewer-next{right:7px}.project-viewer .viewer-transcript>summary{font-size:10px;min-height:28px}.case-navigation{padding:10px 12px;gap:8px}.case-navigation button{width:0;flex:1;min-width:0;font-size:10px;min-height:40px}.case-navigation>span{font-size:9px}}
 
   </style>
   <script src="site.3a9fd201739c.js" defer></script>
@@ -665,9 +689,9 @@ footer{padding-top:22px;padding-bottom:22px}
       <ol class="company-timeline" aria-label="Marketing and client experience">
 <li class="company-entry" id="experience-paylocity"><div class="timeline-period"><span class="timeline-year">2026</span><span class="timeline-range">May 2026–Present</span></div><article class="company-card"><header class="company-heading"><div><p class="eyebrow">Client implementation · Rochester, NY</p><h2>Paylocity</h2></div><span class="company-role-count">2 roles</span></header><p class="company-note">An internship followed by an ongoing implementation role.</p><div class="company-roles"><section class="timeline-role" data-role="implementation-consultant"><h3>Implementation Consultant I</h3><p class="role-period">Aug 2026–Present · Part-time · Hybrid</p><details class="role-contributions" id="contributions-implementation-consultant"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Manage small business onboarding and implementation projects through needs assessments, business requirements, and payroll and HR configuration.</li><li>Analyze, validate, and migrate client data using Excel and HRIS platforms.</li><li>Facilitate meetings, resolve implementation challenges, and support clients alongside cross-functional teams.</li></ul></div></details></section><section class="timeline-role" data-role="retirement-services-intern"><h3>Retirement Services Intern</h3><p class="role-period">May–Aug 2026 · Internship · On-site</p><details class="role-contributions" id="contributions-retirement-services-intern"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Supported 401(k) implementation through setup, requirements collection, and onboarding.</li><li>Partnered with cross-functional teams to streamline implementation workflows.</li><li>Collaborated with an intern cohort on a capstone project proposing ways to increase client engagement and post-implementation reviews.</li></ul></div></details></section></div></article></li>
 <li class="company-entry" id="experience-florania"><div class="timeline-period"><span class="timeline-year">2026</span><span class="timeline-range">Feb–Mar 2026</span></div><article class="company-card"><header class="company-heading"><div><p class="eyebrow">Fashion & digital marketing · Milan, Italy</p><h2>Florania</h2></div><span class="company-role-count">1 role</span></header><p class="company-note">Research, content, and digital recommendations in an international setting.</p><div class="company-roles"><section class="timeline-role" data-role="florania-marketing-intern"><h3>Marketing Intern</h3><p class="role-period">Feb–Mar 2026 · Milan, Italy · Hybrid</p><details class="role-contributions" id="contributions-florania-marketing-intern"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Researched markets and trends across social media, website performance, online sales, and PR.</li><li>Analyzed customer preferences to support product, merchandising, and assortment decisions.</li><li>Created digital marketing content and recommended website improvements for brand presence and user experience.</li><li>Used competitor analysis, audience research, and data-driven recommendations to support digital and communications strategy.</li></ul><a class="text-link" href="projects.html#project/florania-strategy">Explore the Florania project</a></div></details></section></div></article></li>
-<li class="company-entry" id="experience-kevin-guest-house"><div class="timeline-period"><span class="timeline-year">2025</span><span class="timeline-range">Jun–Dec 2025</span></div><article class="company-card"><header class="company-heading"><div><p class="eyebrow">UB Externship · Nonprofit communications · Buffalo, NY</p><h2>Kevin Guest House</h2></div><span class="company-role-count">2 roles</span></header><p class="company-note">From a community engagement internship to contract marketing support.</p><div class="company-roles"><section class="timeline-role" data-role="interim-marketing-support"><h3>Interim Marketing Support</h3><p class="role-period">Aug–Dec 2025 · Contract · Remote</p><details class="role-contributions" id="contributions-interim-marketing-support"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Executed social media strategies supporting organizational awareness and audience reach.</li><li>Drafted and distributed email campaigns about events and organizational updates.</li><li>Used guest stories and testimonials in marketing communications.</li></ul><p class="role-tools">Tools: Canva · Mailchimp</p></div></details></section><section class="timeline-role" data-role="community-engagement-intern"><h3>Community Engagement Intern</h3><p class="role-period">Jun–Jul 2025 · Internship · On-site</p><details class="role-contributions" id="contributions-community-engagement-intern"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Supported multi-channel campaigns through daily social posts, email, print, and website updates.</li><li>Coordinated fundraiser and community-event logistics and promotion, including collateral, copy, and press releases.</li><li>Promoted Give716, which generated $10,430 in campaign contributions as a collaborative result.</li></ul><a class="text-link" href="projects.html?from=experiences#project/kevin-guest-house">Read the Give716 case study</a></div></details></section></div></article></li>
+<li class="company-entry" id="experience-kevin-guest-house"><div class="timeline-period"><span class="timeline-year">2025</span><span class="timeline-range">Jun–Dec 2025</span></div><article class="company-card"><header class="company-heading"><div><p class="eyebrow">UB Externship · Nonprofit communications · Buffalo, NY</p><h2>Kevin Guest House</h2></div><span class="company-role-count">2 roles</span></header><p class="company-note">From a community engagement internship to contract marketing support.</p><div class="company-roles"><section class="timeline-role" data-role="interim-marketing-support"><h3>Interim Marketing Support</h3><p class="role-period">Aug–Dec 2025 · Contract · Remote</p><details class="role-contributions" id="contributions-interim-marketing-support"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Executed social media strategies supporting organizational awareness and audience reach.</li><li>Drafted and distributed email campaigns about events and organizational updates.</li><li>Used guest stories and testimonials in marketing communications.</li></ul><p class="role-tools">Tools: Canva · Mailchimp</p></div></details></section><section class="timeline-role" data-role="community-engagement-intern"><h3>Community Engagement Intern</h3><p class="role-period">Jun–Jul 2025 · Internship · On-site</p><details class="role-contributions" id="contributions-community-engagement-intern"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Supported multi-channel campaigns through daily social posts, email, print, and website updates.</li><li>Coordinated fundraiser and community-event logistics and promotion, including collateral, copy, and press releases.</li><li>Promoted Give716, which generated $10,430 in campaign contributions as a collaborative result.</li></ul><a class="text-link" href="projects.html?from=experiences#project/kevin-guest-house">Explore the Give716 fundraising project</a></div></details></section></div></article></li>
 <li class="company-entry" id="experience-imageout"><div class="timeline-period"><span class="timeline-year">2025</span><span class="timeline-range">Aug–Sep 2025</span></div><article class="company-card"><header class="company-heading"><div><p class="eyebrow">Digital marketing · Rochester, NY</p><h2>ImageOut</h2></div><span class="company-role-count">1 role</span></header><p class="company-note">Connecting audience research with campus outreach.</p><div class="company-roles"><section class="timeline-role" data-role="imageout-digital-intern"><h3>Digital Marketing Intern</h3><p class="role-period">Aug–Sep 2025 · Part-time<br>Rochester, NY · Remote</p><p class="timeline-role-summary">Researching social opportunities and connecting RIT students with the organization through campus outreach.</p><details class="role-contributions" id="contributions-imageout-digital-intern"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Researched emerging platforms, including TikTok, for audience and brand opportunities.</li><li>Conducted outreach through posters, club engagement, and direct promotion at RIT.</li><li>Reviewed marketing strategies and provided recommendations.</li></ul><div class="experience-focus"><span>Digital marketing research</span><span>Community outreach</span><span>Marketing recommendations</span></div></div></details></section></div></article></li>
-<li class="company-entry" id="experience-aeop"><div class="timeline-period"><span class="timeline-year">2025</span><span class="timeline-range">Jan–May 2025</span></div><article class="company-card"><header class="company-heading"><div><p class="eyebrow">Social media & content · Rochester, NY</p><h2>RIT · Office of K-12 Programs</h2></div><span class="company-role-count">1 role</span></header><p class="company-note">Audience-focused storytelling for AEOP Internships and Fellowships.</p><div class="company-roles"><section class="timeline-role" data-role="aeop-student-assistant"><h3>Marketing and Social Media Student Assistant</h3><p class="role-period">Jan–May 2025 · Part-time<br>Rochester, NY · Hybrid</p><p class="timeline-role-summary">Creating audience-focused content for AEOP Internships and Fellowships across LinkedIn, Instagram, Facebook, and X.</p><details class="role-contributions" id="contributions-aeop-student-assistant"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Managed social media presence and created content aligned with program KPIs.</li><li>Used targeted content strategy and optimization to support visibility and engagement.</li><li>Reported LinkedIn account increases of 96.88% in impressions and 126.58% in engagement. The supplied materials do not specify the baseline or measurement period.</li></ul><div class="experience-focus"><span>Copywriting</span><span>Content creation</span><span>Social analytics</span></div><a class="text-link" href="projects.html#project/aeop">Explore the AEOP case study</a></div></details></section></div></article></li>
+<li class="company-entry" id="experience-aeop"><div class="timeline-period"><span class="timeline-year">2025</span><span class="timeline-range">Jan–May 2025</span></div><article class="company-card"><header class="company-heading"><div><p class="eyebrow">Social media & content · Rochester, NY</p><h2>RIT · Office of K-12 Programs</h2></div><span class="company-role-count">1 role</span></header><p class="company-note">Audience-focused storytelling for AEOP Internships and Fellowships.</p><div class="company-roles"><section class="timeline-role" data-role="aeop-student-assistant"><h3>Marketing and Social Media Student Assistant</h3><p class="role-period">Jan–May 2025 · Part-time<br>Rochester, NY · Hybrid</p><p class="timeline-role-summary">Creating audience-focused content for AEOP Internships and Fellowships across LinkedIn, Instagram, Facebook, and X.</p><details class="role-contributions" id="contributions-aeop-student-assistant"><summary>My contributions <span aria-hidden="true">+</span></summary><div><ul><li>Managed social media presence and created content aligned with program KPIs.</li><li>Used targeted content strategy and optimization to support visibility and engagement.</li><li>Reported LinkedIn account increases of 96.88% in impressions and 126.58% in engagement. The supplied materials do not specify the baseline or measurement period.</li></ul><div class="experience-focus"><span>Copywriting</span><span>Content creation</span><span>Social analytics</span></div><a class="text-link" href="projects.html#project/aeop">Explore the AEOP social media project</a></div></details></section></div></article></li>
       </ol>
     </section>
     <section class="leadership-section page-section timeline-section" id="leadership" aria-labelledby="leadership-title">
