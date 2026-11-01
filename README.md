@@ -4,7 +4,7 @@ This is the simplified, ready-to-upload website export. All files are in one fol
 
 ## Preview on your computer
 
-Keep every file together and double-click `index.html`. Navigation, project filters, case studies, photos, and playlists are included.
+Keep every file together and serve the folder with an HTTP static server, then open `index.html` through that server. This lets the inline document viewer load its preview files.
 
 ## Upload to a GitHub repository
 
@@ -14,7 +14,7 @@ Keep every file together and double-click `index.html`. Navigation, project filt
 4. Select all the extracted files and upload them together into the repository's top level. Keep their filenames unchanged. There is no `dist` folder or nested page folder in this export.
 5. Commit the changes. Uploading code to GitHub stores it; it does not itself turn the repository into a running website.
 
-These pages use relative links, so they work at a domain root or under a repository subdirectory without editing paths.
+These pages use relative links, so they work at a domain root or under a repository subdirectory without editing paths. The document viewer loads its preview JSON through the static host; use an HTTP server when testing locally.
 
 ## Hosting and privacy
 
@@ -28,11 +28,15 @@ For an already configured static host, serve this folder as the site's root; `in
 - `experiences.html`: Paylocity, Kevin Guest House, Florania
 - `projects.html`: Filterable project gallery and case-study dialog
 - `about.html`: Biography, headshot, and Spotify playlists
-- `contact.html`: Contact links
+- `contact.html`: Simple “Let’s Connect!” page with email and LinkedIn links
 - `styles.css`: Shared design and responsive layout
-- `site.js`: Legacy hash navigation and experience details
+- `site.js`: Legacy links, company timeline controls, skills gallery filters, and cursor ripples
 - `projects.js`: Case-study content, five skills per case, and result context
 - `app.js`: Project filters, search, case navigation, and copy links
+- `viewer.js`: Inline project-page viewer with swiping, page selection, document switching, enlargement, and page text
+- The preview `.json` files: Self-contained pages for each document; keep them beside the HTML and code files
 - `CONTENT_NOTES.md`: Content sources and metric limitations
+
+The website displays original project pages inline, with no project-file download controls or raw PDFs in this export. Project cards are text-based, and the rectangular home headshot links to About Me.
 
 The header and footer are present in each HTML file. Apply shared edits to all five pages. Font files are self-hosted; Fira Sans's license is included in `OFL.txt`. No license is granted here for Carson's original photos, logo, or portfolio materials.
