@@ -81,3 +81,5 @@ Readers can swipe between pages, select a page, use keyboard or Previous/Next co
 Project card index numbers and the bottom highlight/CTA rows are removed at Carson’s request. Cards retain their full-area case-study links, summaries, and skills. This changes presentation only.
 
 The Home portrait now matches the About Me photo’s dimensions and responsive sizing, including its 4:5 aspect ratio. Its square corners and About Me link are preserved.
+
+Project cards with document previews now open a screen-filling reader by default. Pages fit the available space without cropping, and left/right arrows on the document change pages. Written case-study content remains available through a separate view button. The document sources, page images, extracted text, and case-study claims are unchanged.
