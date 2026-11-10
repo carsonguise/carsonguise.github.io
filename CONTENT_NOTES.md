@@ -2,7 +2,7 @@
 
 ## Sources and scope
 
-The October 29, 2026 user-provided experience, education, and project descriptions (also supplied in `Pasted text(2).txt`) support this expansion. They document ten roles across eight work-history entries, including two RIT teams, two education entries, and 24 projects. Three of those projects were already present; 21 were added. The existing AEOP, Give716, and Slayyyter × Chanel projects are retained, for 27 cases total.
+The October 29, 2026 user-provided experience, education, and project descriptions (also supplied in `Pasted text(2).txt`) support this expansion. They document ten roles across eight work-history entries, including two RIT teams, two education entries, and 24 projects. Three of those projects were already present; 21 were added. The existing AEOP, Give716, and Slayyyter × Chanel projects are retained, for 27 projects at that point. The November 3 Paylocity team project brings the current total to 28.
 
 Completed projects have five relevant skills, project context, contribution, three strategic approach steps, a synthesized takeaway, and supported deliverables/outcomes. The summaries were initially based on the supplied project descriptions. Original files supplied October 31, 2026 are now viewable inline where available; numerical findings from those files have not been added as new performance claims. Slayyyter × Chanel is an ongoing project with a brief status message instead of completed-case sections. Proposed recommendations and concepts are not represented as implemented client work or measured commercial improvements. The brand analyses describe the historical periods researched, rather than asserting current brand leadership, policy, or performance.
 
@@ -21,7 +21,7 @@ Completed projects have five relevant skills, project context, contribution, thr
 
 ## Result and concept boundaries
 
-- AEOP: self-reported LinkedIn impressions +96.88% and engagement/interactions +126.58%. The period and baseline are unspecified, and sole attribution is not asserted. The latest description calls the second metric engagement; earlier supplied materials call it interactions.
+- AEOP: the supplied November 3 social media data presentation supports LinkedIn impressions +96.88% (9,775 impressions, slide 6) and LinkedIn post interactions +126.58% (1,040 interactions, slide 7). The reporting window is Jan 13–May 1, 2025; the comparison period is not named. Sole attribution and measured application growth are not asserted.
 - Give716: $10,430 is the campaign total, not an individual fundraising total. No other event revenue is included.
 - RIT Business Analytics Competition 2025: team recognition of “Promising Submission,” not a winning rank or implementation claim.
 - Target: ages 30–50 describe the proposed campaign audience, not a measured audience result.
@@ -95,3 +95,33 @@ Project overviews and document previews now share one combined view with no sepa
 - Other projects show grounded qualitative findings rather than invented numerical outcomes. The Silent Behavior finding is attributed to the supplied poster’s informal RIT student survey; no sample size is claimed.
 
 Project detail pages use one vertical scrolling column on every screen size. The overview, findings, and document follow one another in the same scroll area; no separate overview scroll pane remains. This changes layout only.
+
+## November 3 work projects and AEOP presentation
+
+The user’s November 3 description supports the new Paylocity Client Communication Coach project. It was developed collaboratively within the implementation team to address siloed communication. The Microsoft Copilot agent analyzes communications and client files to compile implementation stage, pain points, communication preferences, and other relevant context. A copy-and-paste report can go into Salesforce notes and return to the agent with a new client situation to help formulate an informed response. The recommendation is value-added employee support and more consistent cross-team context. The user supplied no project date, adoption data, measured time savings, or quantified communication improvement; none is claimed. Its five skills describe the supplied activities rather than added credentials.
+
+The gallery now contains four work projects (Paylocity, Florania, Kevin Guest House, and AEOP) and 24 academic projects/concepts. Grouping changes navigation without relabeling academic brand analyses as client engagements. Topic filters combine with the work/academic filter.
+
+The original `Social Media Data Presentation (Carson).pptx` is retained unchanged, with a derived PDF and eight inline page previews. This brings the current document total to 25 previews / 325 pages. Slides 6 and 7 contain embedded chart images; their figures are also included in accessible page text. The reporting dates and precise interaction metric are reflected in the AEOP summary and experience entry. Recommendations about application growth remain proposals.
+
+Typography is enlarged across all five pages: main paragraphs generally use 16–17px, with small metadata and labels at least 14px. Existing document page images retain their original source typography and can be enlarged using the viewer.
+
+## Travel section and photo availability
+
+The November 3 request supplies Carson’s enjoyment of traveling and talking about travel experiences. The new About Me travel copy uses that statement and the existing Paris, Milan, and London study-abroad record; it adds no destinations, trip counts, or other biographical claims. No travel/personal-photo uploads were available when this edit was prepared. The personal-photo manifest is therefore empty, and the carousel remains absent from the live page until Carson supplies those photos. Existing headshots or project graphics are not substituted as travel photos.
+
+## Campus involvement structure — November 3
+
+The latest user request supports a separate Campus Involvement section and the new American Marketing Association chapter entry. Carson helped found the RIT chapter during fall 2026; work began July 2026 and continues. The entry uses “Founding team member” without inventing an officer title, member counts, events, or outcomes.
+
+Previously stated BTP involvement, retrieved from January 26, 2026 user context, supports Member (August 2024–Present), attendance at technical/professional workshops including SQL, and Member of the Year 2024–2025, awarded May 2025 for consistent attendance and participation. No leadership or workshop-organizing duties are claimed. MADPR preserves the supplied Events Chair / Co-Marketing Chair progression. The latest request lists the Student Marketing Advisory Council and Behavioral Research in Consumer Kinetics Lab; their entries name the organizations without adding dates or specific duties.
+
+Work Experience retains paid campus positions and all other employment roles. Tools & Qualifications follows Campus Involvement and includes the existing skills gallery and supplied tools, languages, communication platforms, and certifications.
+
+## Course list — November 10, 2026
+
+The user supplied 23 course titles, codes, and institutional associations for the Experiences page’s Tools & Qualifications section. All 18 RIT Saunders and five CIEE entries are reproduced, with whitespace normalized and ampersands escaped for HTML. No dates, grades, prerequisites, completion status, or degree-credit claims are added. This list is independent of the existing short “Relevant coursework” selection on About Me.
+
+## Voice guide — November 10, 2026
+
+Carson supplied a professional, warm, confident tone guide. Website narration and microcopy now follow it; the guide is retained in `VOICE_GUIDE.md` for future edits. About Me replaces broad personality labels with already supported examples from Florania and Gummy Gains. Project contribution and deliverable copy is first person, with shared work described as team contributions. All project data points, final findings, dates, skills, statuses, categories, source notes, and resources are unchanged. Concepts remain proposals, the Simternship and Country Manager remain simulations, and the Slayyyter × Chanel press kit remains an explicitly fictitious project in progress. No new result claims or placeholders are published. Source-document wording and team credits are untouched.
