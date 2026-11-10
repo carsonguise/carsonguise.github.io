@@ -125,3 +125,9 @@ The user supplied 23 course titles, codes, and institutional associations for th
 ## Voice guide — November 10, 2026
 
 Carson supplied a professional, warm, confident tone guide. Website narration and microcopy now follow it; the guide is retained in `VOICE_GUIDE.md` for future edits. About Me replaces broad personality labels with already supported examples from Florania and Gummy Gains. Project contribution and deliverable copy is first person, with shared work described as team contributions. All project data points, final findings, dates, skills, statuses, categories, source notes, and resources are unchanged. Concepts remain proposals, the Simternship and Country Manager remain simulations, and the Slayyyter × Chanel press kit remains an explicitly fictitious project in progress. No new result claims or placeholders are published. Source-document wording and team credits are untouched.
+
+## Contact availability — November 10, 2026
+
+The latest request states Summer 2027 internships in its opening and Spring 2027 internships in its final sentence, so the main contact message includes both Spring and Summer 2027. Internships are visually prioritized. The user explicitly states expected MBA completion by Spring 2028 and interest in full-time opportunities after that; these are included in one quieter line beneath the contact links. No availability dates, credentials, or completed degree are inferred beyond that statement.
+
+The subsequent November 10 contact edit centers the page’s main content, retains the supplied LinkedIn profile URL as a prominent contact choice with its address visible, and adds the exact requested closing sentence: “I look forward to connecting!” Internship and MBA availability are unchanged.
