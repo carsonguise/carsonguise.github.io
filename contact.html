@@ -705,7 +705,7 @@ body{font-size:16px}
 /* Experiences: work, campus involvement, then tools and qualifications. */
 .experience-page-heading{padding-top:40px;padding-bottom:27px}
 .experience-page-heading>.eyebrow{margin-bottom:15px}
-.experience-page-heading>p:not(.eyebrow){font-size:17px;color:var(--muted);line-height:1.75;margin:18px 0 22px;max-width:680px}
+.experience-page-heading>p:not(.eyebrow){font-size:17px;color:var(--muted);line-height:1.75;margin:18px 0 22px;max-width:none}
 .experience-section-nav{display:flex;align-items:center;justify-content:flex-start;gap:10px;flex-wrap:wrap;max-width:none;font-size:16px;letter-spacing:0}
 .experience-section-nav a{padding:11px 17px;min-height:46px;line-height:1.5;border:1px solid #b1c5a2;border-radius:25px;background:#f9f6e67d}
 .experience-section-nav a:hover{background:var(--middle)}
@@ -1011,6 +1011,22 @@ footer{padding-bottom:36px}
 .resource-links{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start}
 .resource-links .button{font-size:15px;min-height:44px;padding:10px 16px}
 .experience-award-link{color:var(--forest);text-decoration:underline;text-underline-offset:3px}
+
+/* Keep the Experiences overview and section links close to the timeline. */
+.page-experiences main>.experience-page-heading{padding-bottom:24px}
+.page-experiences .experience-section-nav{gap:6px}
+.page-experiences .experience-section-nav a{padding:10px 14px;min-height:44px}
+.page-experiences #experience{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:20px;align-items:end;padding-top:24px}
+.page-experiences #experience>.section-heading{margin-bottom:18px}
+.page-experiences #experience>.section-heading>p{margin-top:10px}
+.page-experiences #experience>.timeline-toolbar{margin:0 0 18px}
+.page-experiences #experience>.company-timeline{grid-column:1/-1}
+.page-experiences :is(#qualifications,#skills,#courses){scroll-margin-top:110px}
+@media(max-width:750px){
+ .page-experiences #experience{grid-template-columns:minmax(0,1fr)}
+ .page-experiences #experience>.section-heading{margin-bottom:10px}
+ .page-experiences #experience>.timeline-toolbar{margin-bottom:16px}
+}
 
 </style>
   <script src="site-3e03a2da8d10.js" defer></script>
