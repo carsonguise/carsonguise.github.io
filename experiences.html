@@ -1028,8 +1028,32 @@ footer{padding-bottom:36px}
  .page-experiences #experience>.timeline-toolbar{margin-bottom:16px}
 }
 
+/* Home cards show the complete summary and open the full work in one dialog. */
+.page-home .home-experience-grid,.page-home .home-project-grid{align-items:stretch}
+.page-home .home-experience-card{display:flex;flex-direction:column;min-width:0}
+.page-home .home-experience-card>p.home-card-summary,.page-home .home-project-card .card-summary{width:100%;max-width:none;white-space:normal;overflow:visible;text-overflow:clip;display:block;-webkit-line-clamp:unset;font-size:17px;line-height:1.75}
+.page-home .home-experience-card>p.home-card-summary{flex:1;margin:16px 0 22px}
+.page-home .home-card-cta{align-self:flex-start;margin-top:auto}
+.page-home .home-project-card .project-open{align-items:stretch}
+.page-home .home-project-card .card-title-row{align-items:flex-start}
+.page-home .home-project-card .card-title-row h3{max-width:none}
+.page-home .home-project-card .card-summary{margin-bottom:20px}
+.page-home .home-project-card .project-card-link{margin-top:auto;padding-top:12px}
+.page-home :is(.home-experience-card,.home-project-card .project-open):focus-visible{outline:2px solid var(--forest);outline-offset:4px}
+#case-dialog.experience-dialog .company-card{border:0;border-radius:0;background:transparent;box-shadow:none;padding:24px 32px 32px}
+#case-dialog.experience-dialog .company-heading h2{font-size:clamp(30px,4vw,43px)}
+#case-dialog.experience-dialog .company-note{font-size:17px;line-height:1.75;margin:18px 0 24px}
+#case-dialog.experience-dialog .role-contributions ul{font-size:17px;line-height:1.8}
+#case-dialog.experience-dialog .experience-page-link{margin-top:24px;display:flex;width:max-content;max-width:100%}
+#case-dialog .case-navigation[hidden]{display:none}
+@media(max-width:650px){
+ .page-home .home-experience-card>p.home-card-summary,.page-home .home-project-card .card-summary{font-size:16px}
+ #case-dialog.experience-dialog .company-card{padding:18px 20px 24px}
+ #case-dialog.experience-dialog .role-contributions ul{font-size:16px}
+}
+
 </style>
-  <script src="site-3e03a2da8d10.js" defer></script>
+  <script src="site-afc921a1ff65.js" defer></script>
 </head>
 <body class="page-experiences" data-page="experiences">
   <a class="skip-link" href="#top">Skip to content</a>
