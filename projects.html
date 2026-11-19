@@ -823,8 +823,10 @@ body{font-size:16px}
 .page-projects .plain-project-card :is(.card-meta,.project-period,.card-title-row,.card-skills){justify-content:center;width:100%}
 .page-projects .project-group-work .card-title-row h3{font-size:25px}
 .page-projects .card-skills{flex-wrap:wrap}
+.page-home :is(.home-experience-card,.home-project-card){transition:transform .2s,background .2s,border-color .2s,box-shadow .2s}
+.page-home :is(.home-experience-card,.home-project-card):is(:hover,:focus-within){transform:translateY(-4px);background:var(--cream);border-color:#b0c59f;box-shadow:0 9px 23px #3855340d}
 .page-projects .project-card{transition:background .2s,border-color .2s,box-shadow .2s}
-.page-projects .project-card:is(:hover,:focus-within){background:#f9f6e6;border-color:#6e905e;box-shadow:0 8px 24px #38553420}
+.page-projects .project-card:is(:hover,:focus-within){background:var(--middle);border-color:#6e905e;box-shadow:0 8px 24px #38553430}
 .page-projects .project-card :is(.project-open,.card-title-row,.card-subtitle,.card-summary){transform:none}
 #case-dialog,#case-dialog.has-project-document{width:min(1120px,calc(100vw - 48px));max-width:calc(100vw - 48px);height:min(900px,calc(100dvh - 48px));max-height:calc(100dvh - 48px);margin:auto;inset:0;padding:0;border:1px solid #a5b597;border-radius:24px;overflow:hidden;background:var(--cream)}
 #case-dialog[open],#case-dialog.has-project-document[open]{display:flex;flex-direction:column}
@@ -911,7 +913,7 @@ footer{padding-bottom:36px}
  #case-dialog .case-navigation button{width:0;flex:1;min-width:0;font-size:14px;padding:9px 7px}
  .section-heading>p{font-size:16px}
 }
-@media(prefers-reduced-motion:reduce){.page-projects .project-card{transition:none}}
+@media(prefers-reduced-motion:reduce){.page-home :is(.home-experience-card,.home-project-card),.page-projects .project-card{transition:none}.page-home :is(.home-experience-card,.home-project-card):is(:hover,:focus-within){transform:none}}
 
 /* Larger home introduction and quiet, accessible project result announcements. */
 .home-intro h1{font-size:clamp(44px,4.6vw,62px)}
@@ -1046,6 +1048,30 @@ footer{padding-bottom:36px}
 #case-dialog.experience-dialog .role-contributions ul{font-size:17px;line-height:1.8}
 #case-dialog.experience-dialog .experience-page-link{margin-top:24px;display:flex;width:max-content;max-width:100%}
 #case-dialog .case-navigation[hidden]{display:none}
+/* Social work samples stay with their roles and share one swipeable layout. */
+.work-samples{min-width:0;margin-top:25px}
+.samples-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.samples-heading :is(h4,h5){font-size:20px;line-height:1.35;font-weight:500;margin:0}
+.samples-intro,.sample-website>p{font-size:16px;line-height:1.7;color:var(--muted);max-width:none;margin:10px 0 16px}
+.sample-controls{display:flex;gap:8px}
+.sample-controls[hidden]{display:none}
+.sample-controls button{min-height:40px;padding:8px 13px;border:1px solid #9bb18b;border-radius:999px;background:transparent;color:var(--forest);font:inherit;font-size:14px;cursor:pointer}
+.sample-controls button:is(:hover,:focus-visible){background:var(--middle)}
+.sample-controls button:disabled{opacity:.4;cursor:default}
+.social-sample-rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 18px)/2);gap:18px;min-width:0;max-width:100%;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:1px;overscroll-behavior-x:contain;padding:1px 1px 12px;scrollbar-width:thin;scrollbar-color:#8da77e transparent}
+.social-sample{display:flex;flex-direction:column;min-width:0;margin:0;scroll-snap-align:start;scroll-snap-stop:always;background:#fff9;border:1px solid #becdb0;border-radius:16px;overflow:hidden}
+.social-sample figcaption{display:flex;flex-direction:column;gap:5px;padding:15px 17px;min-height:99px}
+.sample-platform{font-size:14px;color:var(--muted)}
+.social-sample figcaption strong{font-size:17px;font-weight:500;line-height:1.4}
+.social-preview{display:block;width:100%;height:600px;border:0;background:#fff}
+.social-video{object-fit:contain;background:#28323b}
+.social-sample .sample-source{font-size:15px;line-height:1.5;margin:15px 17px;align-self:flex-start}
+.social-sample .sample-note{font-size:14px;line-height:1.6;color:var(--muted);margin:13px 17px 0}
+.sample-website{margin-top:19px}
+.sample-website-links{display:flex;gap:15px 24px;flex-wrap:wrap;font-size:16px}
+.social-sample-rail:focus-visible{outline:2px solid var(--forest);outline-offset:3px}
+@media(max-width:900px){.social-sample-rail{grid-auto-columns:100%}.social-preview{height:580px}}
+@media(max-width:650px){.work-samples{margin-top:22px}.samples-heading :is(h4,h5){font-size:19px}.social-sample figcaption{min-height:0;padding:14px}.social-preview{height:530px}.social-sample .sample-source{margin:14px}.sample-controls button{min-height:42px}.sample-website-links{gap:12px 20px}}
 @media(max-width:650px){
  .page-home .home-experience-card>p.home-card-summary,.page-home .home-project-card .card-summary{font-size:16px}
  #case-dialog.experience-dialog .company-card{padding:18px 20px 24px}
@@ -1056,7 +1082,7 @@ footer{padding-bottom:36px}
   <script src="site-afc921a1ff65.js" defer></script>
   <script src="projects-f7d74bbbc66f.js" defer></script>
   <script src="viewer-f7ff3849b371.js" defer></script>
-  <script src="app-db6b2c29df2d.js" defer></script>
+  <script src="app-9a31de8acc10.js" defer></script>
 </head>
 <body class="page-projects" data-page="projects">
   <a class="skip-link" href="#top">Skip to content</a>

@@ -1,5 +1,15 @@
 # Portfolio content notes
 
+## Paylocity summer intern feature — second slide
+
+Carson requested that the summer intern feature initially display his second carousel slide. Instagram's live iframe was verified to start at the first slide despite `img_index=2`. The second slide was selected in the visible carousel and verified to feature Carson Guise, Operations, Retirement Services Intern. Its original public media is retained as `paylocity-carson-summer-intern-feature.mp4` (5-second, silent H.264 video, 720 × 720), with a poster extracted from its first frame. The video displays directly in the Experiences section and the shared Home popup, with Paylocity Careers attribution and the original Instagram link. No other intern's media is used for the preview. The gallery's remaining eleven samples remain platform embeds.
+
+## Social work samples — November 19, 2026
+
+Carson supplied the Instagram, TikTok, and LinkedIn work-sample URLs for Paylocity's Retirement Services Intern role, AEOP, Kevin Guest House, and MADPR's Co-Marketing Chair role. These are inline platform embeds with direct source links, not copied media or new performance claims. Trailing punctuation in three supplied Instagram URLs was removed. The MADPR LinkedIn short link resolves to ugcPost 7365950621100752896; the original short link is retained as the source link.
+
+Carson confirmed collaboration with Paylocity's marketing team on the internship TikTok feature, plus Kevin Guest House website updates and added blog articles. The Kevin Guest House website and July 2025 archive are linked without claiming sole authorship of the archive. Its four social samples sit at company level rather than assigning unverified post dates to a specific role. Platform settings, regional availability, or sign-in requirements can affect embedded playback; direct links remain available for every sample. The Paylocity samples also appear in the Home experience popup through the shared experience template.
+
 ## Sources and scope
 
 The October 29, 2026 user-provided experience, education, and project descriptions (also supplied in `Pasted text(2).txt`) support this expansion. They document ten roles across eight work-history entries, including two RIT teams, two education entries, and 24 projects. Three of those projects were already present; 21 were added. The existing AEOP, Give716, and Slayyyter × Chanel projects are retained, for 27 projects at that point. The November 3 Paylocity team project brings the current total to 28.
