@@ -10,7 +10,7 @@ This is a flat, buildless website: every file belongs at the same folder level. 
 
 The five pages include 28 projects (4 work and 24 academic), topic filters, search, and inline project document previews. Project details remain one vertical scrolling view, with page arrows, swiping, and keyboard navigation. Main text is approximately 16–17px; small labels are at least 14px.
 
-The shared-link preview is configured for https://carsonguise.github.io/ and uses carson-guise-social-preview-v1.png: Carson’s logo and full name on the green gradient. Upload this image along with all five HTML pages. If the website address changes, its preview URLs need to be updated too.
+The shared-link preview is configured for https://carsonguise.github.io/ and uses carson-guise-social-preview-v2.png: Carson’s logo and full name on the green gradient. Upload this image along with all five HTML pages. If the website address changes, its preview URLs need to be updated too.
 
 The original editable project documents are retained in the private Site source, outside this deployable package. This export contains inline previews without project-file download buttons.
 
