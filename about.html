@@ -1022,9 +1022,7 @@ footer{padding-bottom:36px}
 /* Work samples lead naturally to the related role and campaign examples. */
 .page-projects .project-card{display:flex;flex-direction:column}
 .page-projects .plain-project-card .project-open{height:auto;flex:1}
-.project-card-experience{display:flex;align-items:center;justify-content:center;min-height:56px;margin:0 18px 16px;padding:8px 12px;border:1px solid #a8bd99;border-radius:12px;background:#e1eacd70;color:var(--forest);font-size:14px;line-height:1.4;text-align:center}
-.project-card-experience:hover{background:var(--middle)}
-.project-experience-link{margin-top:17px;font-size:15px}
+.project-experience-link{margin-top:17px;font-size:16px;line-height:1.5;min-height:44px;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 .resource-links{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start}
 .resource-links .button{font-size:15px;min-height:44px;padding:10px 16px}
 .experience-award-link{color:var(--forest);text-decoration:underline;text-underline-offset:3px}
@@ -1155,8 +1153,20 @@ footer{padding-bottom:36px}
  #case-dialog :is(.button,.experience-page-link){min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:center}
 }
 
+/* Phone cards keep a clear action and gain a quiet hover cue as they pass by. */
+@media(max-width:600px){
+ .page-home :is(.home-experience-card,.home-project-card),.page-projects .project-card{transition:background-color .24s ease,border-color .24s ease,box-shadow .24s ease}
+ .page-home :is(.home-experience-card,.home-project-card):is(:hover,:focus-within),.page-projects .project-card:is(:hover,:focus-within){transform:none}
+ .page-home :is(.home-experience-card,.home-project-card).mobile-card-in-view,.page-projects .project-card.mobile-card-in-view{background:#edf2de;border-color:#78966c;box-shadow:0 6px 18px #38553418;transform:none}
+ .page-home .home-experience-card .home-card-cta,.page-home .home-project-card .project-card-link,.page-projects .plain-project-card .project-card-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 15px;border:1px solid #829e73;border-radius:24px;background:transparent;font-size:15px;line-height:1.5;transition:background-color .2s ease,color .2s ease}
+ :is(.page-home,.page-projects) .mobile-card-in-view :is(.home-card-cta,.project-card-link){background:var(--forest);color:var(--cream);border-color:var(--forest)}
+}
+@media(max-width:600px) and (prefers-reduced-motion:reduce){
+ .page-home :is(.home-experience-card,.home-project-card),.page-projects .project-card,.page-home .home-experience-card .home-card-cta,.page-home .home-project-card .project-card-link,.page-projects .plain-project-card .project-card-link{transition:none}
+}
+
 </style>
-  <script src="site-913f52e6bd8a.js" defer></script>
+  <script src="site-4f2aef1db62a.js" defer></script>
   <script src="carousel-f931368f6000.js" defer></script>
 </head>
 <body class="page-about" data-page="about">
