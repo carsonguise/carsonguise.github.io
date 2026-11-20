@@ -1098,15 +1098,73 @@ footer{padding-bottom:36px}
  #case-dialog.experience-dialog .role-contributions ul{font-size:16px}
 }
 
+/* Give phone layouts room for readable text and complete controls. */
+.nav-toggle,.topic-select{display:none}
+@media(max-width:600px){
+ html{scrollbar-gutter:auto}
+ body{font-size:16px;line-height:1.65}
+ .site-header{display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:8px 14px;align-items:center;height:auto;min-height:68px;padding:10px 20px}
+ .site-header .identity{width:44px;align-self:center}
+ .site-header .identity img{display:block;width:44px;height:auto}
+ .site-header.has-mobile-menu .nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:9px;border:1px solid #a8bd99;border-radius:12px;background:#e1eacd70;color:var(--forest)}
+ .nav-toggle:hover,.nav-toggle[aria-expanded="true"]{background:var(--middle)}
+ .site-header nav{grid-column:1/-1;display:flex;flex-direction:column;align-items:stretch;gap:4px;width:100%;max-width:none;min-width:0;margin:0;padding:4px 0 10px}
+ .site-header.has-mobile-menu nav{display:none}
+ .site-header.menu-is-open nav{display:flex}
+ .site-header nav a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:48px;padding:10px 14px;border-radius:12px;font-size:16px;line-height:1.5;white-space:normal;text-align:center}
+ .site-header nav a[aria-current="page"]{background:var(--middle)}
+ .site-header nav a:after{content:none}
+ .home-intro-copy>p:not(.eyebrow){font-size:18px;line-height:1.75}
+ .home-card-summary,.card-summary,.about-intro>p:not(.eyebrow),.education-card>p:not(.eyebrow),.more-heading>p:not(.eyebrow),.timeline-role-summary{line-height:1.75}
+ .about-intro>p:not(.eyebrow){margin-bottom:18px}
+ .role-contributions li+li,.education-card>ul li+li,.project-section li+li{margin-top:10px}
+ .page-experiences .company-entry{padding-left:20px}
+ .page-experiences .company-card{min-width:0;padding:20px 16px}
+ .page-experiences .timeline-role{padding-left:14px}
+ .page-projects .project-kinds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:100%;max-width:390px;margin-inline:auto}
+ .page-projects .project-kind{justify-content:center;min-width:0;min-height:48px;padding:7px 6px;font-size:14px;line-height:1.35;white-space:normal;text-align:center}
+ .page-projects .work-controls{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+ .page-projects .filters{display:none}
+ .page-experiences .skill-filters{display:none}
+ .topic-select{display:grid;gap:6px;width:100%;min-width:0;font-size:14px;line-height:1.5}
+ .topic-select select{width:100%;min-width:0;min-height:46px;border:1px solid #b8c8a6;border-radius:24px;background-color:#f9f6e6ad;font-size:16px;padding:10px 38px 10px 14px}
+ .page-projects .gallery-tools{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;width:100%;min-width:0}
+ .page-projects .gallery-tools .search-box{width:100%;min-width:0;min-height:46px;margin:0;gap:10px}
+ .page-projects .search-box svg{flex:none}
+ .page-projects .gallery-tools .search-box input{flex:1;min-width:0;width:100%;font-size:16px}
+ .page-projects .sort-box{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;min-width:0}
+ .page-projects .sort-box>span{display:block}
+ .page-projects .sort-box select{width:100%;min-width:0;min-height:44px;padding:10px 14px;font-size:16px}
+ :is(.topic-select,.page-projects .sort-box) select{appearance:none;padding-right:38px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='m3 5 4 4 4-4' stroke='%23364f3b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center}
+ .page-contact .simple-contact-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .page-contact .simple-contact-links>a{display:grid;grid-template-rows:21px minmax(0,1fr);justify-items:center;align-items:center;min-height:132px;padding:18px 10px;gap:10px;font-size:25px;letter-spacing:-.02em}
+ .page-contact .simple-contact-links .simple-email{font-size:16px;line-height:1.65;letter-spacing:0}
+ .page-contact .contact-link-label{font-size:14px;line-height:1.5;letter-spacing:0}
+ #case-dialog>.dialog-top{gap:12px;padding:10px 14px;font-size:14px;line-height:1.4}
+ #case-dialog>.dialog-top>a{min-width:0;overflow-wrap:anywhere}
+ #case-dialog #close-case{flex:none;min-height:44px}
+ #case-dialog>#case-content{scrollbar-width:thin}
+ #case-dialog :is(.case-header,.project-overview,.project-viewer){padding-inline:16px}
+ #case-dialog .project-section :is(p,li){font-size:16px;line-height:1.75}
+ #case-dialog .project-data{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-columns:auto;overflow:visible;scroll-snap-type:none;padding-bottom:0;gap:12px}
+ #case-dialog .project-data>div:last-child:nth-child(odd){grid-column:1/-1}
+ #case-dialog .project-data strong{overflow-wrap:anywhere}
+ #case-dialog .viewer-file-picker{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;min-width:0;width:100%}
+ #case-dialog .viewer-file-picker select{width:100%;max-width:100%;min-width:0;min-height:44px;font-size:16px}
+ #case-dialog .viewer-page-picker select{min-height:44px;font-size:16px}
+ #case-dialog :is(.button,.experience-page-link){min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:center}
+}
+
 </style>
-  <script src="site-afc921a1ff65.js" defer></script>
+  <script src="site-913f52e6bd8a.js" defer></script>
   <script src="carousel-f931368f6000.js" defer></script>
 </head>
 <body class="page-about" data-page="about">
   <a class="skip-link" href="#top">Skip to content</a>
   <header class="site-header">
     <a class="identity" href="index.html" aria-label="Carson Guise, home"><img src="cg-full.svg" alt="Carson Guise CG monogram" width="60" height="39"></a>
-    <nav aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <nav id="primary-navigation" aria-label="Main navigation">
       <a href="experiences.html">Experiences</a>
       <a href="projects.html">Projects</a>
       <a href="about.html" aria-current="page">About Me</a>
